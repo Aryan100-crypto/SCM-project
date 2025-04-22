@@ -22,7 +22,7 @@ This website is designed to showcase our skills, projects, experience, and achie
 
 - HTML5  
 - CSS3  
-- JavaScript (Optional for interactivity)  
+- JavaScript 
 - Github
 
 ---
