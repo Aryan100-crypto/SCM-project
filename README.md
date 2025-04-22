@@ -5,7 +5,7 @@ This website is designed to showcase our skills, projects, experience, and achie
 
 ## 🌐 Live Demo
 
-👉 [Visit Our Portfolio](http://127.0.0.1:5500/SCM[project][aryan1]/SCM[project]-Copy/index.html)  
+👉 [Visit Our Portfolio](http://127.0.0.1:5500/SCM-FinalProject/SCM-Aryan/index.html)  
 
 
 ## 🛠️ Features
