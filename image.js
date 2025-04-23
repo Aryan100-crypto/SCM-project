@@ -1,5 +1,5 @@
 <script>
-        // Get file input and image preview element
+        // Get file input and image preview elemen
         const fileInput = document.getElementById('fileUpload');
         const imagePreview = document.getElementById('imagePreview');
 
