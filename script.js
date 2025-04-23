@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(`Thank you, ${name}! Your message has been sent.`);
         contactForm.reset();
     });
-<<<<<<< Updated upstream
-=======
     // Get file input and image preview element
     const fileInput = document.getElementById('fileUpload');
     const imagePreview = document.getElementById('imagePreview');
@@ -52,5 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
             progressBar.value = percent;
         }
     });
->>>>>>> Stashed changes
 });
