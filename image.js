@@ -3,7 +3,7 @@
         const fileInput = document.getElementById('fileUpload');
         const imagePreview = document.getElementById('imagePreview');
 
-        // Event listener for when the user selects a file
+        // Event listener for when the user selects a fil
         fileInput.addEventListener('change', function(event) {
             const file = event.target.files[0]; // Get the file selected by the user
 
