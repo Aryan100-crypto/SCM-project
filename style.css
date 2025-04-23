@@ -351,3 +351,17 @@ footer .footer-first {
 #contact-form button:hover {
     background-color: #0056b3;
 }
+
+#music {
+    background-color: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  #music h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
