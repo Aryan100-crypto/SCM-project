@@ -11,7 +11,7 @@
             if (file && file.type.startsWith('image/')) {
                 const reader = new FileReader();
 
-                // Once the file is loaded, set it as the source for the preview image
+                // Once the file is loaded, set it as the source for the preview imag
                 reader.onload = function(e) {
                     imagePreview.src = e.target.result; // Set the image source to the uploaded image
                     imagePreview.style.display = 'block'; // Show the preview
