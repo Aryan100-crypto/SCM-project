@@ -7,7 +7,7 @@
         fileInput.addEventListener('change', function(event) {
             const file = event.target.files[0]; // Get the file selected by the user
 
-            // Check if the file is an image
+            // Check if the file is an imag
             if (file && file.type.startsWith('image/')) {
                 const reader = new FileReader();
 
