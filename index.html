@@ -11,74 +11,14 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-<style>
-      
-        .e{
-            margin: 0;
-            padding: 0;
-            sizing: border-box;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        label {
-            font-size: 16px;
-            margin-bottom: 10px;
-            color: #555;
-        }
-
-        input[type="file"] {
-            padding: 10px;
-            margin-bottom: 20px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        input[type="file"]:hover {
-            background-color: #ddd;
-        }
-
-        .preview-container {
-            text-align: center;
-        }
-
-        #imagePreview {
-            display: none; /* Hide the preview initially */
-            margin-top: 20px;
-            max-width: 100%; /* Make sure the image is responsive */
-            height: auto;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-    </style>
-    
 </head>
-
 <body>
     <header>
         <nav>
             <div class="left">Online portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -88,14 +28,16 @@
         </nav>
     </header>
     <main>
+        <section id="home">
         <section class="firstsection">
             <div class="leftSection">
                 Welcome to our<span class="purple"><br>Online portfolio</span>
                 <div>and We are <br>Web Passionate</div>
                 <div>Web Developers</div>
                 <div class="buttons">
-                    <button class="btn"><a href="https://drive.google.com/file/d/1esIyNjgpWP2Ru--4us0OOTh1DdO2abIN/view?usp=sharing">
-                        Download Resume</a>
+                    <button class="btn"><a
+                            href="https://drive.google.com/file/d/1esIyNjgpWP2Ru--4us0OOTh1DdO2abIN/view?usp=sharing">
+                            Download Resume</a>
                     </button>
                     <button class="btn"><a href="https://github.com/">
                             Visit Github </a>
@@ -103,29 +45,25 @@
                 </div>
             </div>
             <div class="RightSection">
+                <!--Right Image section-->
+                <Section class="e">
+                    <div class="container">
+                        <h1>Upload and Display Image</h1>
+                        <!-- File Upload Form -->
+                        <form>
+                            <label for="fileUpload">Choose an image to upload:</label>
+                            <input type="file" id="fileUpload" accept="image/*">
+                        </form>
 
-                <Section class ="e">
-
-    <div class="container">
-        <h1>Upload and Display Image</h1>
-
-        <!-- File Upload Form -->
-        <form>
-            <label for="fileUpload">Choose an image to upload:</label>
-            <input type="file" id="fileUpload" accept="image/*">
-        </form>
-
-        <!-- Image Preview Section -->
-        <div class="preview-container">
-            <h3>Image Preview:</h3>
-            <img id="imagePreview" src="" alt="Uploaded Image">
-        </div>
-    </div>
-
-
-
-   
+                        <!-- Image Preview Section -->
+                        <div class="preview-container">
+                            <h3>Image Preview:</h3>
+                            <img id="imagePreview" src="" alt="Uploaded Image">
+                        </div>
+                    </div>
             </div>
+        </section>
+        <!--end-->
         </section>
         <hr>
         <section class="secondSection">
@@ -163,10 +101,12 @@
         <section id="about">
             <div class="about-container">
                 <h2>About Us</h2>
-                <p>We are passionate web developers dedicated to creating beautiful and functional websites. With expertise in modern web technologies, we deliver top-notch solutions tailored to our clients' needs.</p>
+                <p>We are passionate web developers dedicated to creating beautiful and functional websites. With
+                    expertise in modern web technologies, we deliver top-notch solutions tailored to our clients' needs.
+                </p>
             </div>
         </section>
-    
+
         <!-- Services Section -->
         <section id="services">
             <div class="service-container">
@@ -184,7 +124,8 @@
                 <div class="service-box">
                     <i class="fas fa-paint-brush"></i>
                     <h3>UI/UX Design</h3>
-                    <p>Our intuitive UI/UX designs ensure seamless user experiences, enhancing engagement and satisfaction.</p>
+                    <p>Our intuitive UI/UX designs ensure seamless user experiences, enhancing engagement and
+                        satisfaction.</p>
                 </div>
             </div>
         </section>
@@ -205,17 +146,18 @@
                 </div>
             </div>
         </section>
+        <!--Music Section-->
         <section id="music">
             <h2>🎧 Now Playing</h2>
             <audio id="audioPlayer" controls>
                 <source src="flute-melody-315241.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
+                Your browser does not support the audio element.
             </audio>
             <p><strong>Track:</strong> Dreamscape</p>
             <p><strong>Artist:</strong> You</p>
             <progress id="progressBar" value="0" max="100"></progress>
-          </section>
-          
+        </section>
+        <!--end-->
     </main>
     <footer>
         <section id="contact">
@@ -241,37 +183,8 @@
                 www.ouronlineportfolio.com | All rights reserved
             </div>
         </section>
-    </footer>    
+    </footer>
     <script src="script.js"></script>
-
-       <script>
-        // Get file input and image preview element
-        const fileInput = document.getElementById('fileUpload');
-        const imagePreview = document.getElementById('imagePreview');
-
-        // Event listener for when the user selects a file
-        fileInput.addEventListener('change', function(event) {
-            const file = event.target.files[0]; // Get the file selected by the user
-
-            // Check if the file is an image
-            if (file && file.type.startsWith('image/')) {
-                const reader = new FileReader();
-
-                // Once the file is loaded, set it as the source for the preview image
-                reader.onload = function(e) {
-                    imagePreview.src = e.target.result; // Set the image source to the uploaded image
-                    imagePreview.style.display = 'block'; // Show the preview
-                };
-
-                // Read the file as a Data URL (base64 encoding)
-                reader.readAsDataURL(file);
-            } else {
-                alert('Please upload a valid image file.');
-            }
-        });
-    </script>
-              
-    
 </body>
 
 </html>
