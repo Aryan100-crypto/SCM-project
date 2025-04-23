@@ -5,7 +5,7 @@
 
         // Event listener for when the user selects a fil
         fileInput.addEventListener('change', function(event) {
-            const file = event.target.files[0]; // Get the file selected by the user
+            const file = event.target.files[0]; // Get the file selected by he user
 
             // Check if the file is an imag
             if (file && file.type.startsWith('image/')) {
