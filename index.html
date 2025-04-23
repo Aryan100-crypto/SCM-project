@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+<<<<<<< Updated upstream
 
 <style>
       
@@ -75,15 +76,16 @@
 
     </style>
     
+=======
+>>>>>>> Stashed changes
 </head>
-
 <body>
     <header>
         <nav>
             <div class="left">Online portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -93,14 +95,16 @@
         </nav>
     </header>
     <main>
+        <section id="home">
         <section class="firstsection">
             <div class="leftSection">
                 Welcome to our<span class="purple"><br>Online portfolio</span>
                 <div>and We are <br>Web Passionate</div>
                 <div>Web Developers</div>
                 <div class="buttons">
-                    <button class="btn"><a href="https://drive.google.com/file/d/1esIyNjgpWP2Ru--4us0OOTh1DdO2abIN/view?usp=sharing">
-                        Download Resume</a>
+                    <button class="btn"><a
+                            href="https://drive.google.com/file/d/1esIyNjgpWP2Ru--4us0OOTh1DdO2abIN/view?usp=sharing">
+                            Download Resume</a>
                     </button>
                     <button class="btn"><a href="https://github.com/">
                             Visit Github </a>
@@ -108,6 +112,7 @@
                 </div>
             </div>
             <div class="RightSection">
+<<<<<<< Updated upstream
 <!--               //  <img src="bg.webp" alt=""> -->
                 <Section class ="e">
 
@@ -130,7 +135,27 @@
 
 
    
+=======
+                <!--Right Image section-->
+                <Section class="e">
+                    <div class="container">
+                        <h1>Upload and Display Image</h1>
+                        <!-- File Upload Form -->
+                        <form>
+                            <label for="fileUpload">Choose an image to upload:</label>
+                            <input type="file" id="fileUpload" accept="image/*">
+                        </form>
+
+                        <!-- Image Preview Section -->
+                        <div class="preview-container">
+                            <h3>Image Preview:</h3>
+                            <img id="imagePreview" src="" alt="Uploaded Image">
+                        </div>
+                    </div>
+>>>>>>> Stashed changes
             </div>
+        </section>
+        <!--end-->
         </section>
         <hr>
         <section class="secondSection">
@@ -168,10 +193,12 @@
         <section id="about">
             <div class="about-container">
                 <h2>About Us</h2>
-                <p>We are passionate web developers dedicated to creating beautiful and functional websites. With expertise in modern web technologies, we deliver top-notch solutions tailored to our clients' needs.</p>
+                <p>We are passionate web developers dedicated to creating beautiful and functional websites. With
+                    expertise in modern web technologies, we deliver top-notch solutions tailored to our clients' needs.
+                </p>
             </div>
         </section>
-    
+
         <!-- Services Section -->
         <section id="services">
             <div class="service-container">
@@ -189,7 +216,8 @@
                 <div class="service-box">
                     <i class="fas fa-paint-brush"></i>
                     <h3>UI/UX Design</h3>
-                    <p>Our intuitive UI/UX designs ensure seamless user experiences, enhancing engagement and satisfaction.</p>
+                    <p>Our intuitive UI/UX designs ensure seamless user experiences, enhancing engagement and
+                        satisfaction.</p>
                 </div>
             </div>
         </section>
@@ -210,6 +238,21 @@
                 </div>
             </div>
         </section>
+<<<<<<< Updated upstream
+=======
+        <!--Music Section-->
+        <section id="music">
+            <h2>🎧 Now Playing</h2>
+            <audio id="audioPlayer" controls>
+                <source src="flute-melody-315241.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p><strong>Track:</strong> Dreamscape</p>
+            <p><strong>Artist:</strong> You</p>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </section>
+        <!--end-->
+>>>>>>> Stashed changes
     </main>
     <footer>
         <section id="contact">
@@ -235,37 +278,8 @@
                 www.ouronlineportfolio.com | All rights reserved
             </div>
         </section>
-    </footer>    
+    </footer>
     <script src="script.js"></script>
-
-       <script>
-        // Get file input and image preview element
-        const fileInput = document.getElementById('fileUpload');
-        const imagePreview = document.getElementById('imagePreview');
-
-        // Event listener for when the user selects a file
-        fileInput.addEventListener('change', function(event) {
-            const file = event.target.files[0]; // Get the file selected by the user
-
-            // Check if the file is an image
-            if (file && file.type.startsWith('image/')) {
-                const reader = new FileReader();
-
-                // Once the file is loaded, set it as the source for the preview image
-                reader.onload = function(e) {
-                    imagePreview.src = e.target.result; // Set the image source to the uploaded image
-                    imagePreview.style.display = 'block'; // Show the preview
-                };
-
-                // Read the file as a Data URL (base64 encoding)
-                reader.readAsDataURL(file);
-            } else {
-                alert('Please upload a valid image file.');
-            }
-        });
-    </script>
-              
-    
 </body>
 
 </html>
