@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Contact Form
     const contactForm = document.getElementById("contact-form");
 
     contactForm.addEventListener("submit", function (e) {
-        e.preventDefault(); // prevent actual form submission
+        e.preventDefault(); // Prevent actual form submission
 
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
