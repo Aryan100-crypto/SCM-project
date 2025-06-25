@@ -1,1 +1,1 @@
-SCM Project
+SCM-project
